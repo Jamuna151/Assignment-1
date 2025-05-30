@@ -1,0 +1,21 @@
+import java.util.*;
+public class BitwiseExperiment {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		// Input two integers
+		System.out.print("Enter first integer: ");
+		int a = sc.nextInt();
+		System.out.print("Enter second integer: ");
+		int b = sc.nextInt();
+
+		// Bitwise operations
+		System.out.println("Bitwise AND: " + (a & b));
+		System.out.println("Bitwise OR: " + (a | b));
+		System.out.println("Bitwise XOR: " + (a ^ b));
+		System.out.println("Left Shift a by 2: " + (a << 2));
+		System.out.println("Left Shift b by 2: " + (b << 2));
+		System.out.println("Right Shift a by 2: " + (a >> 2));
+		System.out.println("Right Shift b by 2: " + (b>>2));
+	}
+}
