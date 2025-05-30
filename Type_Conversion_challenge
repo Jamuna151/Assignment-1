@@ -1,0 +1,27 @@
+import java.util.*;
+public class Type_Conversion_challenge {
+	public static void main(String[]args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Integer");
+		int i=sc.nextInt();
+		System.out.println("Enter Float");
+		float f=sc.nextFloat();
+		System.out.println("Enter Character");
+		char c=sc.next().charAt(0);
+
+//      converting integer to float
+		float i_to_f=(float)i;
+
+//		sum converted float to input float
+		float f_sum=i_to_f+f;
+
+//		convert character to ascii value
+		int ascii=(int)c;
+
+//		sum ascii to input integer
+		int i_sum=ascii+i;
+		System.out.println("sum of input float and converted float "+f_sum);
+		System.out.println("sum of input integer and ascii value "+i_sum);
+		
+	}
+}
